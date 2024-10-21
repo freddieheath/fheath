@@ -2,20 +2,28 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        openSans: ['"Open Sans"', "sans-serif"],
+        quicksand: ['"Quicksand"', "sans-serif"],
+        urbanist: ['"Urbanist"', "sans-serif"],
+      },
+    },
     backgroundImage: {
-      "light-pattern": `linear-gradient(#D9D9D950 .1em, transparent .1em),
-                       linear-gradient(90deg, #D9D9D950 .1em, transparent .1em)`,
-      "dark-pattern": `linear-gradient(#26262650 .1em, transparent .1em),
-                       linear-gradient(90deg, #26262650 .1em, transparent .1em)`,
+      "light-pattern": `linear-gradient(#D9D9D940 .1em, transparent .1em),
+                       linear-gradient(90deg, #D9D9D940 .1em, transparent .1em)`,
+      "dark-pattern": `linear-gradient(#26262640 .1em, transparent .1em),
+                       linear-gradient(90deg, #26262640 .1em, transparent .1em)`,
     },
     backgroundSize: {
-      "light-size": "3em 3em",
-      "dark-size": "3em 3em",
+      "light-size": "2.5em 2.5em",
+      "dark-size": "2.5em 2.5em",
     },
     backgroundColor: {
       "light-bg": "#FAF9F6",
       "dark-bg": "#3B3B3B",
+      "light-grey": "#ededed",
+      black: "#111111",
     },
     fontSize: {
       xs: "0.6rem",
