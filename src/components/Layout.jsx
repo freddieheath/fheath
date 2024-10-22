@@ -6,10 +6,10 @@ const Layout = ({ children }) => {
   const { darkMode } = useContext(ThemeContext);
   return (
     <div
-      className={`font-urbanist h-max w-full px-8 font-light ${
+      className={`h-max w-full px-8 font-quicksand font-light ${
         darkMode
-          ? `bg-dark-bg bg-dark-pattern bg-dark-size`
-          : `bg-light-bg bg-light-pattern bg-light-size`
+          ? `bg-noir bg-dark-pattern bg-dark-size`
+          : `bg-o-w bg-light-pattern bg-light-size`
       }`}
     >
       {children}

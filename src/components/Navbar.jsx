@@ -14,14 +14,20 @@ export default function Navbar() {
           }`}
         >
           <h1
-            className={`rounded-lg px-3 ${darkMode ? `bg-light-bg text-gray-800` : `bg-black text-white`}`}
+            className={`rounded-lg px-3 ${darkMode ? `bg-white text-noir` : `bg-black text-white`}`}
           >
             F
           </h1>
         </span>
-        <div className="flex gap-x-6">
-          <Darkmode className={`cursor-pointer`} />
-          <RxHamburgerMenu className={`cursor-pointer text-2xl`} />
+        <div
+          className={`flex items-center gap-x-6 ${darkMode ? `text-white` : `text-black`}`}
+        >
+          <Darkmode
+            className={`cursor-pointer text-2xl ${darkMode ? `bg-secondary-grey rounded-full p-1` : `text-black`}`}
+          />
+          <RxHamburgerMenu
+            className={`cursor-pointer text-2xl ${darkMode ? `bg-secondary-grey rounded-full p-1` : `text-black`}`}
+          />
         </div>
       </div>
     </>

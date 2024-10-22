@@ -96,4 +96,9 @@ export const DirectoryData = [
     description: "My thoughts and general ramblings",
     link: "/blog",
   },
+  {
+    id: "Spotify Playlist",
+    description: "The playlist I listen to while working!",
+    link: "/blog",
+  },
 ];

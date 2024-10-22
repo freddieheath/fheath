@@ -1,17 +1,25 @@
 import { Design } from "../data";
 import { WebDev } from "../data";
 import { Misc } from "../data";
-import { FaReact } from "react-icons/fa";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
 export default function Skills() {
+  const { darkMode } = useContext(ThemeContext);
   return (
     <div className={``}>
-      <h2 className={`mb-4 border-b-2 pb-2 text-xl`}>My Skills</h2>
-      <h2 className={`pb-4 text-xl`}>Design</h2>
+      <h2
+        className={`mb-4 border-b-2 pb-2 text-xl ${darkMode ? `text-white` : `text-black`}`}
+      >
+        My Skills
+      </h2>
+      <h2 className={`pb-4 text-xl ${darkMode ? `text-white` : `text-black`}`}>
+        Design
+      </h2>
       <div className={`mb-6 grid grid-cols-2 gap-x-4 gap-y-3`}>
         {Design.map((data) => (
           <div
-            className={`bg-light-grey flex items-center gap-x-2 rounded-md border px-2 py-5`}
+            className={`flex items-center gap-x-2 rounded-md px-2 py-5 ${darkMode ? `bg-secondary-grey text-white` : `bg-light-grey text-black`}`}
             key={data.id}
           >
             <>{data.icon}</>
@@ -19,11 +27,13 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <h2 className={`pb-4 text-xl`}>Web Dev</h2>
+      <h2 className={`pb-4 text-xl ${darkMode ? `text-white` : `text-black`}`}>
+        Web Dev
+      </h2>
       <div className={`mb-6 grid grid-cols-2 gap-x-4 gap-y-3`}>
         {WebDev.map((data) => (
           <div
-            className={`bg-light-grey flex items-center gap-x-2 rounded-md border px-2 py-5`}
+            className={`flex items-center gap-x-2 rounded-md bg-light-grey px-2 py-5 ${darkMode ? `bg-secondary-grey text-white` : `bg-light-grey text-black`}`}
             key={data.id}
           >
             <>{data.icon}</>
@@ -31,15 +41,19 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <h2 className={`pb-4 text-xl`}>Misc</h2>
+      <h2 className={`pb-4 text-xl ${darkMode ? `text-white` : `text-black`}`}>
+        Misc
+      </h2>
       <div className={`mb-6 grid grid-cols-2 gap-x-4 gap-y-3`}>
         {Misc.map((data) => (
           <div
-            className={`bg-light-grey flex items-center gap-x-2 rounded-md border px-2 py-5`}
+            className={`flex items-center gap-x-2 rounded-md px-2 py-5 ${darkMode ? `bg-secondary-grey text-white` : `bg-light-grey text-black`}`}
             key={data.id}
           >
             <>{data.icon}</>
-            <p>{data.id}</p>
+            <p className={` ${darkMode ? `text-white` : `text-black`}`}>
+              {data.id}
+            </p>
           </div>
         ))}
       </div>

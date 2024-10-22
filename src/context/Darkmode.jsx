@@ -8,9 +8,7 @@ const Darkmode = () => {
   return (
     <div>
       <button
-        className={`cursor-pointer align-middle text-xl ${
-          darkMode ? `text-white` : `text-gray-800`
-        }`}
+        className={`cursor-pointer align-middle text-xl ${darkMode ? `bg-secondary-grey rounded-full p-1` : `text-black`}`}
         onClick={() => {
           toggleTheme();
         }}
