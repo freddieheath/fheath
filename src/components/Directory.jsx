@@ -13,7 +13,9 @@ export default function Directory() {
         >
           Pages
         </h1>
-        <div className={`flex flex-col gap-y-4 py-4 ${darkMode ? `` : ``}`}>
+        <div
+          className={`flex flex-col gap-y-4 py-4 md:grid md:grid-cols-2 md:gap-x-4 ${darkMode ? `` : ``}`}
+        >
           {DirectoryData.map((data) => (
             <Link
               to={data.link}
