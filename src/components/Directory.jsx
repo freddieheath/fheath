@@ -9,7 +9,7 @@ export default function Directory() {
     <>
       <div className={`py-6`}>
         <h1
-          className={`border-b-2 pb-2 text-xl ${darkMode ? `text-white` : `text-black`}`}
+          className={`border-b pb-2 text-xl ${darkMode ? `text-white` : `text-black`}`}
         >
           Pages
         </h1>

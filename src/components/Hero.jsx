@@ -17,7 +17,7 @@ export default function Hero() {
           Media Communications (BA) Graduate
         </h2>
         <p
-          className={`text-lg py-6 ${darkMode ? `text-light-grey` : `font-white`}`}
+          className={`text-lg py-6 md:w-8/12 ${darkMode ? `text-light-grey` : `font-white`}`}
         >
           A London College of Communication looking for entry level roles in
           advertising and marketing.

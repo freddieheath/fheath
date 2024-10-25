@@ -9,7 +9,7 @@ export default function Skills() {
   return (
     <div className={``}>
       <h2
-        className={`mb-4 border-b-2 pb-2 text-xl ${darkMode ? `text-white` : `text-black`}`}
+        className={`mb-4 border-b pb-2 text-xl ${darkMode ? `text-white` : `text-black`}`}
       >
         My Skills
       </h2>
@@ -22,7 +22,9 @@ export default function Skills() {
             className={`flex items-center gap-x-2 rounded-md px-2 py-5 ${darkMode ? `bg-secondary-grey text-white` : `bg-light-grey text-black`}`}
             key={data.id}
           >
-            <>{data.icon}</>
+            <div>
+              <img className="h-4 w-4" src={data.icon} alt="Alt" />
+            </div>
             <p>{data.id}</p>
           </div>
         ))}
@@ -36,7 +38,9 @@ export default function Skills() {
             className={`flex items-center gap-x-2 rounded-md bg-light-grey px-2 py-5 ${darkMode ? `bg-secondary-grey text-white` : `bg-light-grey text-black`}`}
             key={data.id}
           >
-            <>{data.icon}</>
+            <div>
+              <img className="h-4 w-4" src={data.icon} alt="Alt" />
+            </div>
             <p>{data.id}</p>
           </div>
         ))}
@@ -50,8 +54,10 @@ export default function Skills() {
             className={`flex items-center gap-x-2 rounded-md px-2 py-5 ${darkMode ? `bg-secondary-grey text-white` : `bg-light-grey text-black`}`}
             key={data.id}
           >
-            <>{data.icon}</>
-            <p className={` ${darkMode ? `text-white` : `text-black`}`}>
+            <div>
+              <img className="h-4 w-4" src={data.icon} alt="Alt" />
+            </div>
+            <p className={`${darkMode ? `text-white` : `text-black`}`}>
               {data.id}
             </p>
           </div>

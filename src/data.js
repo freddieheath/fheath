@@ -13,70 +13,91 @@ export const ProjectData = [
 export const WebDev = [
   {
     id: "HTML5",
+    icon: "assets/icons/html.webp",
   },
   {
     id: "CSS",
+    icon: "assets/icons/css.webp",
   },
   {
     id: "Javascript ES6",
+    icon: "assets/icons/js.webp",
   },
   {
     id: "Tailwind",
+    icon: "assets/icons/tailwind.webp",
   },
   {
     id: "Bootstrap",
+    icon: "assets/icons/bootstrap.webp",
   },
   {
     id: "React",
+    icon: "assets/icons/atom.webp",
   },
   {
     id: "NextJS",
+    icon: "assets/icons/next.webp",
   },
   {
     id: "Wordpress",
+    icon: "assets/icons/wordpress.webp",
   },
   {
     id: "GitHub",
+    icon: "assets/icons/github.webp",
   },
   {
     id: "VSCode",
+    icon: "assets/icons/vsc.webp",
   },
   {
     id: "Firebase",
+    icon: "assets/icons/firebase.webp",
   },
   {
     id: "NPM",
+    icon: "assets/icons/npm.webp",
   },
 ];
 export const Design = [
   {
     id: "Canva",
+    icon: "assets/icons/canva.webp",
   },
   {
     id: "Figma",
+    icon: "assets/icons/figma.webp",
   },
   {
     id: "Photoshop",
+    icon: "assets/icons/photoshop.webp",
   },
   {
     id: "InDesign",
+    icon: "assets/icons/indesign.webp",
   },
   {
     id: "Premiere Pro",
+    icon: "assets/icons/premierepro.webp",
   },
 ];
 export const Misc = [
   {
     id: "Word",
+    icon: "assets/icons/word.webp",
   },
   {
     id: "Powerpoint",
+    icon: "assets/icons/powerpoint.webp",
   },
   {
     id: "Excel",
+    icon: "assets/icons/excel.webp",
   },
   {
     id: "AI Prompting",
+    icon: "assets/icons/chatgpt.webp",
   },
 ];
 
