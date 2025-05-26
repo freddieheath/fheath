@@ -1,41 +1,36 @@
 import { ThemeProvider } from "./context/ThemeContext";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Directory from "./components/Directory";
-import Skills from "./components/Skills";
+import Jobs from "./components/Jobs";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
-import Blog from "./components/Blog";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      <ThemeProvider>
-        <Router>
-          <Layout>
-            <Navbar />
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <>
-                    <Hero />
-                    <Directory />
-                    <Skills />
-                  </>
-                }
-              />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/blog" element={<Blog />} />
-            </Routes>
-            <Footer />
-          </Layout>
-        </Router>
-      </ThemeProvider>
+      <div data-aos="fade-down">
+        <ThemeProvider>
+          <Router>
+            <Layout>
+              <Navbar />
+              <Hero />
+              <Jobs />
+              <Projects />
+              <Skills />
+              <Footer />
+            </Layout>
+          </Router>
+        </ThemeProvider>
+      </div>
     </>
   );
 }

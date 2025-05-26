@@ -1,12 +1,34 @@
 export const ProjectData = [
   {
     id: "tomdaviespope",
-    title: "Tom Davies-Pope's Portfolio",
+    title: "Student Portfolio",
     tags: "React, Tailwind, Firebase, Vite",
+    date: "2023",
     description:
-      "The first ever website I deployed. It was a portfolio for his final uni showcase that listed all the projects he had done throughout uni.",
+      "The first website I ever made! It was a portfolio for a fellow student's final uni showcase that listed all the projects he had done throughout uni. It was the website I ever deployed- hench the unpolished rough edges.",
     coverimage: "/assets/covers/tdp.webp",
     link: "https://tdaviespope.com/",
+  },
+];
+
+export const JobsData = [
+  {
+    id: "Magnite",
+    yearstart: "2024",
+    yearend: "Present",
+    jobtitle: "Account Executive",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    icon: "",
+  },
+  {
+    id: "Morrisons",
+    yearstart: "2017",
+    yearend: "2024",
+    jobtitle: "Customer Assistant",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    icon: "",
   },
 ];
 
@@ -20,7 +42,7 @@ export const WebDev = [
     icon: "assets/icons/css.webp",
   },
   {
-    id: "Javascript ES6",
+    id: "Javascript",
     icon: "assets/icons/js.webp",
   },
   {
@@ -99,6 +121,14 @@ export const Misc = [
     id: "AI Prompting",
     icon: "assets/icons/chatgpt.webp",
   },
+  {
+    id: "Salesforce",
+    icon: "assets/icons/chatgpt.webp",
+  },
+  {
+    id: "Microstategy",
+    icon: "assets/icons/chatgpt.webp",
+  },
 ];
 
 export const DirectoryData = [
@@ -110,7 +140,7 @@ export const DirectoryData = [
   {
     id: "Contact Me",
     description: "My inbox is always open!",
-    link: "/contact",
+    link: "mailto: fheath090401@gmail.com?subject=Hello%20there&body=This%20is%20a%20predefined%20email%20body.",
   },
   {
     id: "Blog",
@@ -120,6 +150,23 @@ export const DirectoryData = [
   {
     id: "Spotify Playlist",
     description: "The playlist I listen to while working!",
-    link: "/blog",
+    link: "https://open.spotify.com/playlist/4NANLEWGWBDpXck6Kdu56u?si=7OWEOz4YRQ6LZ-g_DGT56g",
+  },
+];
+
+export const BlogData = [
+  {
+    id: "Title",
+    date: "9 April",
+    body: "This is the blog post body",
+    images: ["route-one", "route-two"],
+    links: "a link",
+  },
+  {
+    id: "Title",
+    date: "27 Oct",
+    body: "This is the blog post body",
+    images: ["route-one", "route-two"],
+    links: "a link",
   },
 ];

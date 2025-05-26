@@ -1,5 +1,4 @@
 import Darkmode from "../context/Darkmode";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { ThemeContext } from "../context/ThemeContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ export default function Navbar() {
   const { darkMode } = useContext(ThemeContext);
   return (
     <>
-      <div className="flex items-center justify-between py-6">
+      <div className="flex h-16 items-center justify-between py-6">
         <Link to="/">
           <span
             className={`title-font cursor-pointer text-2xl font-extrabold transition-all md:mb-0 ${
@@ -26,10 +25,7 @@ export default function Navbar() {
           className={`flex items-center gap-x-6 ${darkMode ? `text-white` : `text-black`}`}
         >
           <Darkmode
-            className={`cursor-pointer text-2xl ${darkMode ? `bg-secondary-grey rounded-full p-1` : `text-black`}`}
-          />
-          <RxHamburgerMenu
-            className={`cursor-pointer text-2xl ${darkMode ? `bg-secondary-grey rounded-full p-1` : `text-black`}`}
+            className={`cursor-pointer text-2xl ${darkMode ? `rounded-full bg-secondary-grey` : `text-black`}`}
           />
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function Directory() {
           {DirectoryData.map((data) => (
             <Link
               to={data.link}
-              className={`flex flex-col gap-y-1 rounded-md px-4 py-4 transition-all ${darkMode ? `bg-secondary-grey hover:bg-noir-hover text-white` : `hover:bg-o-w-hover bg-light-grey`}`}
+              className={`flex flex-col gap-y-1 rounded-md px-4 py-4 transition-all ${darkMode ? `bg-secondary-grey text-white hover:bg-noir-hover` : `bg-light-grey hover:bg-o-w-hover`}`}
               key={data.id}
             >
               <p

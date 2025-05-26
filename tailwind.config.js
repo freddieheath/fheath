@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      height: {
+        hero: "calc(100vh - 4rem)",
+      },
       fontFamily: {
         openSans: ['"Open Sans"', "sans-serif"],
         quicksand: ['"Quicksand"', "sans-serif"],
@@ -13,7 +16,7 @@ export default {
       "light-pattern": `linear-gradient(#D9D9D940 .1em, transparent .1em),
                        linear-gradient(90deg, #D9D9D940 .1em, transparent .1em)`,
       "dark-pattern": `linear-gradient(#26262640 .1em, transparent .1em),
-                       linear-gradient(90deg, #26262640 .1em, transparent .1em)`,
+                       linear-gradient(90deg, #26262630 .1em, transparent .1em)`,
     },
     backgroundSize: {
       "light-size": "1.5em 1.5em",
@@ -28,6 +31,7 @@ export default {
       "secondary-grey": "#1F1F1F",
       "light-grey": "#ededed",
       black: "#111111",
+      "skills-grey": "#DEDEDE",
     },
     colors: {
       "o-w": "#FAF9F6",
